@@ -1,6 +1,6 @@
 {
   "name": "colorcraft",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A color system for designing beautiful and accesible interfaces",
   "main": "index.js",
   "repository": "https://github.com/radespratama/colorcraft",
