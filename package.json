@@ -1,0 +1,34 @@
+{
+  "name": "colorcraft",
+  "version": "1.0.0",
+  "description": "A color system for designing beautiful and accesible interfaces",
+  "main": "index.js",
+  "repository": "https://github.com/radespratama/colorcraft",
+  "author": "Putu Rades Pratama <radespratama@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "ts-run src/index.ts -w",
+    "build": "tsc && rollup -c",
+    "build:watch": "tsc -w",
+    "build:dec": "tsc -d"
+  },
+  "keywords": [
+    "colorcraft",
+    "bootstrap",
+    "colors",
+    "css",
+    "stitches",
+    "styling",
+    "design",
+    "figma",
+    "color system"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/node": "^18.0.5",
+    "rollup": "^2.77.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4",
+    "typescript-run": "^0.1.1"
+  }
+}

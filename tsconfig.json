@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "outDir": ".",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "types": [],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true
+  },
+  "include": ["./src"],
+  "exclude": ["*.js"]
+}
