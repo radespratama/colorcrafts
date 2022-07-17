@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "watch": "ts-run src/index.ts -w",
-    "build": "tsc && rollup -c",
+    "build": "tsc && rollup -c --environment INCLUDE_DEPS,BUILD:production",
     "build:watch": "tsc -w",
     "build:dec": "tsc -d"
   },
