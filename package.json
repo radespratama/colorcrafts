@@ -1,6 +1,6 @@
 {
   "name": "colorcrafts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A color system for designing beautiful and accesible interfaces",
   "main": "index.js",
   "repository": "https://github.com/radespratama/colorcraft",
@@ -10,7 +10,8 @@
     "watch": "ts-run src/index.ts -w",
     "build": "tsc && rollup -c",
     "build:watch": "tsc -w",
-    "build:dec": "tsc -d"
+    "build:dec": "tsc -d",
+    "build:web": "cd web && yarn next build"
   },
   "keywords": [
     "colorcraft",
