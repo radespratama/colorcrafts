@@ -1,9 +1,8 @@
 import { styled } from "@css/theme.config";
 
 export const Article = styled("article", {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
-  minHeight: "100vh",
+  gridColumn: "span 12 / span 12",
+  "@lg": {
+    gridColumn: "span 9 / span 9",
+  },
 });

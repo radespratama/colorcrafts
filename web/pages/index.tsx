@@ -6,7 +6,7 @@ const Intro = dynamic(() => import("@layout/HomePage/Intro"));
 
 const Home: NextPage = () => {
   return (
-    <Layout title="color pallete for your project ✨">
+    <Layout title="Color pallete for your project ✨">
       <Intro />
     </Layout>
   );

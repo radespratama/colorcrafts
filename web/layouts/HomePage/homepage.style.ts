@@ -24,8 +24,11 @@ export const Section = styled("section", {
 });
 
 export const Heading = styled("h1", {
-  fontSize: "60px",
+  fontSize: "$text-5xl",
   lineHeight: "1.25",
+  "@xs": {
+    fontSize: "$text-6xl",
+  },
 });
 
 export const Description = styled("p", {

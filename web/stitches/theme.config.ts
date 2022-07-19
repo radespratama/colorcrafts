@@ -38,7 +38,7 @@ export const { createTheme, css, getCssText, globalCss, keyframes, styled } =
       },
       fonts: {
         sans: "Outfit, sans-serif",
-        mono: "Cascadia Code, monospace",
+        mono: "Cascadia Code",
       },
       fontSizes: {
         "text-xs": "0.75rem",
@@ -53,7 +53,6 @@ export const { createTheme, css, getCssText, globalCss, keyframes, styled } =
         "text-6xl": "4rem",
       },
       sizes: {
-        xss: "432px",
         xs: "576px",
         sm: "640px",
         md: "768px",

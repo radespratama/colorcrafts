@@ -6,7 +6,11 @@ const globalStyle = globalCss({
     margin: 0,
     padding: 0,
     scrollBehavior: "smooth",
-    fontFamily: "$sans"
+    fontFamily: "$sans",
+  },
+  "@font-face": {
+    fontFamily: "Cascadia Code",
+    src: "url('/fonts/CascadiaCode.woff2') format('woff2')",
   },
   "html, body": {
     overflowX: "hidden",
@@ -16,6 +20,11 @@ const globalStyle = globalCss({
   a: {
     textDecoration: "none",
     cursor: "pointer",
+  },
+  "pre > code": {
+    fontFamily: "$mono !important",
+    lineHeight: "1.5",
+    color: "$gray-100",
   },
 });
 
