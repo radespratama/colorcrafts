@@ -25,7 +25,7 @@ const ColorChart: React.FC<IProps> = ({ colors }) => {
               style={{ backgroundColor: color.hex }}
               onClick={() => handleCopy(color.hex)}
             >
-              {color.colorName}
+              <T.ColorName>{color.hex.toUpperCase()}</T.ColorName>
             </T.ColorSwatch>
           ))}
           <T.ColorSwatchWrapper>

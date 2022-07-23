@@ -9,10 +9,15 @@ export const ColorContainer = styled("div", {
 });
 
 export const ColorSwatch = styled("div", {
-  fontSize: "$text-sm",
   padding: "0.875rem 0.5rem",
   color: "$white",
   cursor: "pointer",
+});
+
+export const ColorName = styled("p", {
+  fontSize: "$text-sm",
+  fontWeight: 400,
+  letterSpacing: "0.035rem",
 });
 
 export const ColorSwatchWrapper = styled("div", {
