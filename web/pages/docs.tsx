@@ -6,35 +6,37 @@ import type { NextPage, GetStaticProps } from "next";
 
 import { styled } from "@css/theme.config";
 import Layout from "@component/Layout";
+import { Colors, Docs } from "@type/types";
 
-import ColorPallete from "@layout/DocsPage/ColorPallete";
 const Intro = dynamic(() => import("@layout/DocsPage/Intro"));
-
-interface DocsProps {
-  docs: string;
-}
 
 const Container = styled("div", {
   position: "relative",
-  gap: "1rem",
   maxWidth: "$md",
   margin: "0 auto",
   padding: "1rem",
   minHeight: "100vh",
 });
 
-const Docs: NextPage<DocsProps> = ({ docs }) => {
+const Docs: NextPage<{ docs: [Docs]; colors: [Colors] }> = ({
+  docs,
+  colors,
+}) => {
   return (
     <Layout title="Documentation">
       <Container>
-        <Intro docs={docs} />
-        <ColorPallete />
+        <Intro docs={docs} colors={colors} />
       </Container>
     </Layout>
   );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
+  const fetchColor = await fetch(
+    `${process.env.NEXT_PUBLIC_PUBLIC_API}/colors`
+  );
+  const colors = await fetchColor.json();
+
   const files = fs.readdirSync(path.join("data"));
   const docs = files.map((file) => {
     const slug = file.replace(".md", "");
@@ -54,6 +56,7 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       docs: docs,
+      colors: colors,
     },
   };
 };
