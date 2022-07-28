@@ -56,6 +56,15 @@ npm run build
 npm publish
 ```
 
+# ⚡ Update
+
+```
+In version 1.0.3
+
+What's new ✨ :
+ - 5 New Colors Pallete [ Midnight Blue, Yale Blue, Floral, Trypan, Slimy Green ]
+```
+
 # 🤞 Contributing
 
 After setting up the project, and making changes:
