@@ -1,6 +1,7 @@
 export interface Colors {
   id: number;
   title: string;
+  new: boolean;
   list: [
     {
       id: number;

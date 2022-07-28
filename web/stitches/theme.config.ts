@@ -8,6 +8,7 @@ export const { createTheme, css, getCssText, globalCss, keyframes, styled } =
         primary: "#111111",
         ...Colors.Gray,
         ...Colors.White,
+        ...Colors.Red,
       },
       fonts: {
         sans: "Outfit, sans-serif",

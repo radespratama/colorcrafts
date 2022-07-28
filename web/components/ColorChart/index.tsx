@@ -30,6 +30,7 @@ const ColorChart: React.FC<IProps> = ({ colors }) => {
           ))}
           <T.ColorSwatchWrapper>
             <T.ColorTitle>{item.title}</T.ColorTitle>
+            {item.new && <T.SpanBadge>NEW</T.SpanBadge>}
           </T.ColorSwatchWrapper>
         </T.ColorContainer>
       ))}
