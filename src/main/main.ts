@@ -19,3 +19,8 @@ export * from "./Sky";
 export * from "./Teal";
 export * from "./Violet";
 export * from "./Yellow";
+export * from "./MidnightBlue";
+export * from "./YaleBlue";
+export * from "./Floral";
+export * from "./Trypan";
+export * from "./SlimyGreen";
