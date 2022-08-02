@@ -42,4 +42,46 @@ export const { getCssText, globalCss, styled } = createStitches({
   },
   media: {},
 });
+
+
+
+/** ==== | HOW TO USING | ==== */
+
+export const ColorSwatch = styled("div", {
+  padding: "0.875rem 0.5rem",
+  color: "$gray-800",
+  cursor: "pointer",
+});
+
+/** ========================= */
+
+```
+
+### Tailwindcss :
+
+```javascript
+const Colors = require("colorcrafts");
+
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+    colors: {
+      ...Colors.Blue,
+      ...Color.White,
+    },
+  },
+  plugins: [],
+};
+
+
+
+/** ==== | HOW TO USING | ==== */
+
+<div className="bg-blue-900 text-white-800">
+  colorcrafts so awesome ✨
+</div>
+
+/** ========================= */
+
 ```
