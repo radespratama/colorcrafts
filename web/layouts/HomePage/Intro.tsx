@@ -15,6 +15,7 @@ const Intro: React.FC = () => {
   return (
     <T.Article>
       <T.Section>
+        <T.Version>1.0.4</T.Version>
         <T.Heading>Colorcrafts</T.Heading>
         <T.Description>
           🎨 A color system for designing beautiful and accessible{" "}

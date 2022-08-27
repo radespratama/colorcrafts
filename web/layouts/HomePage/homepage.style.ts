@@ -6,6 +6,14 @@ const TextClip = keyframes({
   },
 });
 
+export const Version = styled("div", {
+  backgroundColor: "$gray-800",
+  padding: "5px 10px",
+  fontWeight: 500,
+  borderRadius: 8,
+  fontFamily: "$mono",
+});
+
 export const Article = styled("article", {
   maxWidth: "$xl",
   margin: "0 auto",
